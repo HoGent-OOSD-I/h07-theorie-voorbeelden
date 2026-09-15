@@ -7,7 +7,7 @@ import domein.Kat;
 
 public class HuisdierApplicatieMet3Subklasses 
 {
-	public static void main(String[] args) 
+	public static void main()
 	{
 		HuisdierApplicatieMet3Subklasses app = new HuisdierApplicatieMet3Subklasses();
 		app.doeIetsMetHuisdieren();

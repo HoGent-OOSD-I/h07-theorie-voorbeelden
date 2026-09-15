@@ -1,6 +1,5 @@
 package domein;
 
-//tag::HuisdierZonderMaakGeluid[]
 public class Huisdier //extends Object <.>
 {
 	private String naam;
@@ -25,12 +24,9 @@ public class Huisdier //extends Object <.>
 	{
 		return String.format("%s met naam %s", this.getClass().getSimpleName(), naam);
 	}
-	//end::HuisdierZonderMaakGeluid[]
 	
-	//tag::HuisdierMaakGeluid[]
 	public String maakGeluid()
 	{
 		return "!";
 	}
-	//end::HuisdierMaakGeluid[]
 }

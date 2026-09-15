@@ -1,6 +1,5 @@
 package domein.zonderOvererving;
 
-//tag::KatZonderPackage[]
 public class Kat
 {
 	private String naam;
@@ -34,4 +33,3 @@ public class Kat
 		return String.format("%s met naam %s", this.getClass().getSimpleName(), naam);
 	}
 }
-//end::KatZonderPackage[]

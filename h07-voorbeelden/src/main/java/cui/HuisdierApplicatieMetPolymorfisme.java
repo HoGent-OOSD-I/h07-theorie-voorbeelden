@@ -4,7 +4,7 @@ import domein.DomeinController;
 
 public class HuisdierApplicatieMetPolymorfisme 
 {
-	public static void main(String[] args) 
+	public static void main()
 	{
 		HuisdierApplicatieMetPolymorfisme app = new HuisdierApplicatieMetPolymorfisme();
 		app.doeIetsMetHuisdieren();

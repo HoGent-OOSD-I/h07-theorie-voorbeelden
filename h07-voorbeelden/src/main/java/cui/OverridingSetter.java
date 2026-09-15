@@ -5,7 +5,7 @@ import domein.ZichtRekening;
 
 public class OverridingSetter {
 
-	public static void main(String[] args) 
+	public static void main()
 	{
 		OverridingSetter app = new OverridingSetter();
 		app.doeIetsMetRekening();
@@ -13,7 +13,6 @@ public class OverridingSetter {
 	
 	private void doeIetsMetRekening()
 	{
-		//tag::vb[]
 		Rekening rek1 = new Rekening();
 		System.out.println(rek1);
 
@@ -22,7 +21,6 @@ public class OverridingSetter {
 		
 		ZichtRekening rek3 = new ZichtRekening(123123456784L,-1000,"An",-1000);
 		System.out.println(rek3);
-		//end::vb[]
 
 	}
 

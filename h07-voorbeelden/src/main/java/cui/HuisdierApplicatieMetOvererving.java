@@ -6,7 +6,7 @@ import domein.Kat;
 
 public class HuisdierApplicatieMetOvererving 
 {
-	public static void main(String[] args) 
+	public static void main()
 	{
 		HuisdierApplicatieMetOvererving app = new HuisdierApplicatieMetOvererving();
 		app.doeIetsMetHuisdieren();

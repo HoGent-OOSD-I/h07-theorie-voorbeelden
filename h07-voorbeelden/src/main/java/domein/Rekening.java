@@ -1,5 +1,4 @@
 package domein;
-//tag::vb[]
 public class Rekening
 {
     private final long rekeningNr;
@@ -24,7 +23,6 @@ public class Rekening
 		else 
 			throw new IllegalArgumentException("Saldo mag niet onder 0"); 		
 	}
-  //end::vb[]
 	private void controleerRekeningNr(long rekeningNr)
     {
         long eerste10 = rekeningNr / 100;

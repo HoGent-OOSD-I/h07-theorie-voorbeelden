@@ -1,6 +1,5 @@
 package domein.zonderOvererving;
 
-//tag::HondZonderPackage[]
 public class Hond
 {
 	private String naam;
@@ -34,4 +33,3 @@ public class Hond
 		return String.format("%s met naam %s", this.getClass().getSimpleName(), naam);
 	}
 }
-//end::HondZonderPackage[]

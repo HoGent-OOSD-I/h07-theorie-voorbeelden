@@ -1,5 +1,4 @@
 package domein;
-//tag::vb[]
 public class ZichtRekening extends Rekening
 {
 	private double maxKredietOnderNul;
@@ -16,7 +15,6 @@ public class ZichtRekening extends Rekening
 			throw new IllegalArgumentException(
 					String.format("Saldo mag niet onder maxKredietOnderNul (= %.1f)",maxKredietOnderNul)); 		
 	}
-	//end::vb[]
 	public double getMaxKredietOnderNul()
 	{
 		return maxKredietOnderNul;
