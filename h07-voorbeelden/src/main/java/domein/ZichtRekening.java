@@ -4,11 +4,11 @@ public class ZichtRekening extends Rekening
 	private double maxKredietOnderNul;
 	
 	public ZichtRekening(long rekeningNr, double saldo,String houder, double maxKredietOnderNul){
-		super(rekeningNr, saldo,houder);
+		super(rekeningNr, saldo, houder);
 		setMaxKredietOnderNul(maxKredietOnderNul);
 	}
 	
-	public void setSaldo(double saldo) {
+	public final void setSaldo(double saldo) {
 		if(saldo >= maxKredietOnderNul)
 			super.setSaldo(saldo);
 		else 
@@ -20,7 +20,7 @@ public class ZichtRekening extends Rekening
 		return maxKredietOnderNul;
 	}
 
-	public void setMaxKredietOnderNul(double maxKredietOnderNul)
+	public final void setMaxKredietOnderNul(double maxKredietOnderNul)
 	{
 		if (maxKredietOnderNul > 0 || maxKredietOnderNul > getSaldo())
 			throw new IllegalArgumentException("Maxkrediet moet negatief zijn en "
@@ -28,8 +28,6 @@ public class ZichtRekening extends Rekening
 		this.maxKredietOnderNul = maxKredietOnderNul;
 	}
 
-	
-	
 	@Override
 	public boolean haalAf(double bedrag)
 	{

@@ -16,7 +16,7 @@ public class Rekening
         setHouder(houder);
     }
 
-    public void setSaldo(double saldo) 
+    public final void setSaldo(double saldo)
     {
 		if(saldo >= 0)
 			this.saldo = saldo;
@@ -47,12 +47,10 @@ public class Rekening
     {
         return rekeningNr;
     }
-
     public double getSaldo()
     {
         return saldo;
     }
-
     public String getHouder()
     {
         return houder;

@@ -22,7 +22,7 @@ public class Recept {
             throw new IllegalArgumentException("Naam moet ingevuld zijn");
     }
 
-    public void setBereidingstijd(int bereidingstijd) {
+    public final void setBereidingstijd(int bereidingstijd) {
         if (bereidingstijd < MIN_BEREIDINGSTIJD || bereidingstijd > MAX_BEREIDINGSTIJD) {
             throw new IllegalArgumentException(String.format(
                     "Bereidingstijd moet tussen %d en %d minuten liggen", MIN_BEREIDINGSTIJD, MAX_BEREIDINGSTIJD));
@@ -30,7 +30,7 @@ public class Recept {
         this.bereidingstijd = bereidingstijd;
     }
 
-    public void setAantalPersonen(int aantalPersonen) {
+    public final void setAantalPersonen(int aantalPersonen) {
         if (aantalPersonen < MIN_AANTALPERSONEN || aantalPersonen > MAX_AANTALPERSONEN) {
             throw new IllegalArgumentException(String.format(
                     "Aantal personen moet tussen %d en %d liggen", MIN_AANTALPERSONEN, MAX_AANTALPERSONEN));

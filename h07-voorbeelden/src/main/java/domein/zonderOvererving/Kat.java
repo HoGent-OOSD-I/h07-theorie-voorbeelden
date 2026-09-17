@@ -12,10 +12,7 @@ public class Kat
 	{
 		return naam;
 	}
-	public final void setNaam(String naam) 
-	{
-		this.naam = naam;
-	}
+	public final void setNaam(String naam) { this.naam = naam; }
 	public String maakGeluid() 
 	{
 		return "miauw";
