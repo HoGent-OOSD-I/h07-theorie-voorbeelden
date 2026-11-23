@@ -1,7 +1,7 @@
 package domein;
 
 public class Duif extends Huisdier {
-    private final long ringnr;
+    private final long ringnr; // <.>
 
     public Duif(String naam, long ringnr) {
         super(naam);

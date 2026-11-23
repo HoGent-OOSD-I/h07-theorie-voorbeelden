@@ -8,8 +8,8 @@ public class ZichtRekening extends Rekening
 		setMaxKredietOnderNul(maxKredietOnderNul);
 	}
 	
-	public final void setSaldo(double saldo) {
-		if(saldo >= maxKredietOnderNul)
+	public final void setSaldo(double saldo) { // <.>
+		if(saldo >= maxKredietOnderNul) // <.>
 			super.setSaldo(saldo);
 		else 
 			throw new IllegalArgumentException(

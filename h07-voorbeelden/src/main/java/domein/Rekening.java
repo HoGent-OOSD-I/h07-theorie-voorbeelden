@@ -16,9 +16,9 @@ public class Rekening
         setHouder(houder);
     }
 
-    public final void setSaldo(double saldo)
+    public void setSaldo(double saldo) // <.>
     {
-		if(saldo >= 0)
+		if(saldo >= 0) // <.>
 			this.saldo = saldo;
 		else 
 			throw new IllegalArgumentException("Saldo mag niet onder 0"); 		
