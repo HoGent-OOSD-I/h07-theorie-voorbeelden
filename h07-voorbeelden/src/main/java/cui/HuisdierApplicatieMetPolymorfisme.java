@@ -21,10 +21,10 @@ public class HuisdierApplicatieMetPolymorfisme
 		// <.>
 		String[] overzicht = dc.stelDierenVoor();
 		for (String eenDier : overzicht)
-			System.out.println(eenDier);
-		System.out.println();
+			IO.println(eenDier);
+		IO.println();
 		
 		// <.>
-		System.out.println(dc.geefSpuitjes());
+		IO.println(dc.geefSpuitjes());
 	}
 }

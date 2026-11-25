@@ -20,22 +20,22 @@ public class HuisdierApplicatieMetOvererving
 		Hond h = new Hond("Rintje");
 
 		// <.>
-		System.out.println("Dit zijn de huisdieren:");
-		System.out.println(hd);
-		System.out.println(k);
-		System.out.println(h);
-		System.out.println();
+		IO.println("Dit zijn de huisdieren:");
+		IO.println(hd);
+		IO.println(k);
+		IO.println(h);
+		IO.println();
 		
 		// <.>
-		System.out.println("Ze kunnen ook allemaal een soort van geluid maken...");
-		System.out.printf("%s maakt geluid %s%n", hd.getNaam(), hd.maakGeluid());
-		System.out.printf("%s maakt geluid %s%n", k.getNaam(), k.maakGeluid());
-		System.out.printf("%s maakt geluid %s%n", h.getNaam(), h.maakGeluid());
-		System.out.println();
+		IO.println("Ze kunnen ook allemaal een soort van geluid maken...");
+		IO.println(String.format("%s maakt geluid %s", hd.getNaam(), hd.maakGeluid()));
+		IO.println(String.format("%s maakt geluid %s", k.getNaam(), k.maakGeluid()));
+		IO.println(String.format("%s maakt geluid %s", h.getNaam(), h.maakGeluid()));
+		IO.println();
 		
 		// <.>
-		System.out.println("En de kat en de hond kunnen tenslotte nog iets bijzonders:");
-		System.out.printf("Het bijzondere wat een %s kan, is %s%n", k.getClass().getSimpleName(), k.spin());
-		System.out.printf("Het bijzondere wat een %s kan, is %s%n", h.getClass().getSimpleName(), h.kwispel());
+		IO.println("En de kat en de hond kunnen tenslotte nog iets bijzonders:");
+		IO.println(String.format("Het bijzondere wat een %s kan, is %s", k.getClass().getSimpleName(), k.spin()));
+		IO.println(String.format("Het bijzondere wat een %s kan, is %s", h.getClass().getSimpleName(), h.kwispel()));
 	}
 }

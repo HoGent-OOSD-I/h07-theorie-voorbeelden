@@ -20,11 +20,11 @@ public class HuisdierApplicatieMet3Subklasses
 		Hond h = new Hond("Rintje");
 		Duif d = new Duif("Wittekop", 20201234567L); // <.>
 		
-		System.out.println("Dit zijn de huisdieren:");
-		System.out.println(hd);
-		System.out.println(k);
-		System.out.println(h);
-		System.out.println(d); 	// <.>
-		System.out.println();
+		IO.println("Dit zijn de huisdieren:");
+		IO.println(hd);
+		IO.println(k);
+		IO.println(h);
+		IO.println(d); 	// <.>
+		IO.println();
 	}
 }
